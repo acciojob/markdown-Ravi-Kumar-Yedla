@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
-// import { marked } from 'marked'; // Ensure this line is uncommented
-import marked from 'marked'
+import marked from 'marked'; // Ensure this line is uncommented
 import './App.css'; 
 
 const App = () => {
-  const [markdown, setMarkdown] = useState(' Hello Markdown!# Heading');
+  const [markdown, setMarkdown] = useState('# Hello Markdown!');
   const [previewContent, setPreviewContent] = useState('');
 
   useEffect(() => {
-    // Convert Markdown to HTML
+    // Convert Markdown to HTML using marked
     const renderer = marked(markdown);
     setPreviewContent(renderer);
   }, [markdown]);
