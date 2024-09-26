@@ -3,7 +3,7 @@ import marked from 'marked'; // Ensure this line is uncommented
 import './App.css'; 
 
 const App = () => {
-  const [markdown, setMarkdown] = useState('# Hello Markdown!');
+  const [markdown, setMarkdown] = useState('');
   const [previewContent, setPreviewContent] = useState('');
 
   useEffect(() => {
