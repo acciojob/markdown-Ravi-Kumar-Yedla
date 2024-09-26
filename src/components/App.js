@@ -4,7 +4,7 @@ import marked from 'marked'
 import './App.css'; 
 
 const App = () => {
-  const [markdown, setMarkdown] = useState('# Hello Markdown!');
+  const [markdown, setMarkdown] = useState(' Hello Markdown!# Heading');
   const [previewContent, setPreviewContent] = useState('');
 
   useEffect(() => {
